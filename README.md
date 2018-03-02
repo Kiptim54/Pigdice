@@ -6,7 +6,11 @@
 
 ## Description
 
-This is a ping pong game.
+This is pig dice game.
+##### These are the instructions:
+* If the player rolls a 1, they score nothing and it becomes the next player's turn.
+* If the player rolls any other number, it is added to their turn total and the player's turn continues.
+* If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
 
 ## BDD specs:
 * Ensure that users input from the form is being collected:
