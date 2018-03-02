@@ -2,7 +2,7 @@
 
 
 
-//frontend developer
+//UI
 $(document).ready(function(){
   $("#start").submit(function(event){
     event.preventDefault();
@@ -31,7 +31,7 @@ var player2= new Players(player2Name, playerScore);
 
 
 
-//backend
+//business logic
 
 var random= Math.floor(Math.random()*6)+1;
 function Players(name,score){
@@ -40,11 +40,7 @@ function Players(name,score){
 };
 alert(random);
 Players.prototype.add=function(playerScore){
-  if(random!==1){
-    this.score+=random;
-  }else{
-    console.log("faiked");
-  }
+  return player1Score+=random;
 }
 
 });/*DOCUMENT READY*/
