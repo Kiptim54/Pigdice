@@ -1,6 +1,6 @@
 # KIPTIM | PIG DICE
 
-## This is a pingpog game created at Moringa school coding bootcamp.
+## This is a  game created at Moringa school coding bootcamp by Brenda Kiptim.
 
 ## **Brenda Kiptim**
 
