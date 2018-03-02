@@ -31,11 +31,11 @@ This is pig dice game.
 
 ## Project setup instructions
 
-To view the site click:https://kiptim54.github.io/Pingpong/
+To view github page [click here.](https://github.com/Kiptim54/Pigdice)
 
 ## link to live site on GitHub Pages
 
-[PingPong](https://kiptim54.github.io/Pingpong/)
+[Pigdice](https://kiptim54.github.io/Pingpong/)
 
 ## Technologies Used
 
