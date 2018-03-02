@@ -9,12 +9,17 @@ function Players(name,score){
 var player1= new Players();
 var player2=new Players();
 
+allplayers=[player1,player2]
+
 Players.prototype.roll=function(){
 var random= Math.floor(Math.random()*6)+1;
 if(random!==1){
-  alert(player1Score+=random);
-}else{
+  $("#rannum").html(random);
+  var totalScore= this.score+random;
+  $("#totalcount").html(totalScore);
+}else if (random===1){
   alert("You got a zero and lost")
+  var totalscore=0;
 }
 }
 
@@ -34,9 +39,11 @@ $(document).ready(function(){
 });
 
 $("#player1roll").click(function(){
-var player1Score =$("#playerScore1").html(Math.floor(Math.random()*6)+1);
+var player1Score = Math.floor(Math.random()*6)+1;
+/*$("#playerScore1").html(player1Score);*/
 player1.score=player1Score;
-console.log(player1.score);
+console.log(player1Score);
+player1.roll();
 
 
 });
