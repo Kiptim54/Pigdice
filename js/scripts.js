@@ -5,6 +5,7 @@ var random= Math.floor(Math.random()*6)+1;
 function Players(name,score){
   this.name=name;
   this.score;
+
 };
 var player1= new Players();
 var player2=new Players();
@@ -15,8 +16,10 @@ Players.prototype.roll=function(){
 var random= Math.floor(Math.random()*6)+1;
 if(random!==1){
   $("#rannum").html(random);
-  var totalScore= this.score+random;
-  $("#totalcount").html(totalScore);
+  var totalScore= player1.score+random;
+  $("#count").html(totalScore);
+    var complete=totalScore+random;
+    $("#totalcount").html(complete);
 }else if (random===1){
   alert("You got a zero and lost")
   var totalscore=0;
@@ -39,7 +42,7 @@ $(document).ready(function(){
 });
 
 $("#player1roll").click(function(){
-var player1Score = Math.floor(Math.random()*6)+1;
+var player1Score = Math.floor(Math.random()*6+1);
 /*$("#playerScore1").html(player1Score);*/
 player1.score=player1Score;
 console.log(player1Score);
