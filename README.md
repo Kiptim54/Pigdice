@@ -1,4 +1,4 @@
-# KIPTIM | WEB PORTFOLIO
+# KIPTIM | PIG DICE
 
 ## This is a pingpog game created at Moringa school coding bootcamp.
 

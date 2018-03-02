@@ -1,0 +1,15 @@
+.container-fluid{
+  text-align:center;
+  margin:0;
+  padding:0px;
+}
+
+header{
+  background-color:lightblue;
+  margin-top:0;
+  padding:7px;
+}
+#rules li{
+  list-style-position: inside;
+  text-align:left;
+}

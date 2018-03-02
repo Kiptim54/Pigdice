@@ -6,21 +6,57 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
-  <title>Ping Pong</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="col-md-6 col-md-offset-3">
-      Click on the button to get a random number:
-      <button id="random"> Get a number</button>
-      <div class="answer"></div>
-    </div>
-      <div class="total"></div>
-  </div>
-
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
+  <title>Pigdice | Kiptim</title>
+</head>
+<!----------------------------------------------------------------->
+<body>
+  <div class="container-fluid">
+    <div class=row>
+    <div class="col-md-12">
+      <header>
+        <h1>PIG DICE GAME</h1>
+        <p>A game of probabilities</p>
+      </header>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3" id="rules">
+        <h4> Game Rules</h4>
+        <ul>
+          <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+          <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+          <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form id="start">
+          <label for="player1">Name Player 1</label>
+          <input class="form-control" id="player1">
+
+          <label for="player1">Name Player 2</label>
+          <input class="form-control" id="player2">
+          <BR>
+          <button type="submit">START</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-2 col-xs-6">
+        <h4 class="name2">Player 1</h4>
+        <div id="playerScore1"></div>
+      </div>
+      <div class="col-md-3 col-md-offset-2 col-xs-6">
+        <h4 class="name1">Player 2</h4>
+        <div id="playerScore2"></div>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 
 </html>
