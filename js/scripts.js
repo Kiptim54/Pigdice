@@ -7,32 +7,38 @@ function Players(name,score){
   this.score=0;
 };
 
-function scores=(diceroll,currentscore, total score){
-  this.diceroll=
-  this.currentscore=
-  this.totalscore=
-}
+function Scores(diceroll,currentscore, totalscore){
+  this.diceroll=0;
+  this.currentscore=[];
+  this.totalscore=0;
+};
 
 
 
 var player1= new Players();
 var player2=new Players();
 
-allplayers=[player1,player2]
+allplayers=["player1","player2"]
 
 Players.prototype.roll=function(){
-var random= Math.floor(Math.random()*6)+1;
-if(random!==1){
+var random= Math.floor(Math.random()*6+1);
+if(random===1){
+  alert("You got a zero and lost");
+}else
+{
   $("#rannum1").html(random);
   var totalScore= player1.score+random;
   $("#count1").html(totalScore);
     var complete=totalScore+random;
     $("#totalcount1").html(complete);
-}else if (random===1){
-  alert("You got a zero and lost")
-  var totalscore=0;
+
 }
-}
+};
+
+
+/*Players.prototype.losepoints=function(){
+
+}*/
 
 //UI
 $(document).ready(function(){
@@ -61,7 +67,7 @@ player1.roll();
 $("#player2roll").click(function(){
 var player2Score =$("#playerScore2").html(Math.floor(Math.random()*6)+1);
 var player2= new Players(player2Name, playerScore);
-player2.score=player2Score;
+// player2.sco/re=player2Score;
 
 
 

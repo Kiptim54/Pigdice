@@ -13,21 +13,13 @@ This is pig dice game.
 * If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
 
 ## BDD specs:
-* Ensure that users input from the form is being collected:
-  input:50
-  Output:50 on console.Log
-* Ensure that counting from one to user input is happening
-  input:10
-  output:1-10
-* Number divisible by three return ping
-  input: 3
-  output: "ping"
-* Numbers divisible by 5 return Pong
-  input:5
-  output:pong
-* Numbers divisible by 15 return PingPong
-  input:15
-  output:PingPong
+* Ensure that there are two players:
+* Create constructor that stores all the player and their scores
+* when a player rolls the dice generate a random number
+  input: click dice
+  output: Math.floor(Math.random() (times)6+1);
+* if random number is 1 they lose all their accumulated dice rolls, else the total dice rolls are added to total score.
+* First player to get a total score of 100 wins the game
 
 ## Project setup instructions
 
@@ -39,7 +31,7 @@ To view github page [click here.](https://github.com/Kiptim54/Pigdice)
 
 ## Technologies Used
 
-HTML CSS Bootstrap Js
+HTML CSS Bootstrap Js  JQuery
 
 ## Support and contact details
 
